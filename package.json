@@ -17,6 +17,7 @@
   "devDependencies": {
     "@ton/ton": "^14.0.0",
     "@tonconnect/ui-react": "^2.0.6",
+    "@twa-dev/sdk": "^7.0.0",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@typescript-eslint/eslint-plugin": "^7.13.1",
