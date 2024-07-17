@@ -12,8 +12,8 @@ function App() {
   const {
     contract_address,
     counter_value,
-    // recent_sender,
-    // owner_address,
+    recent_sender,
+    owner_address,
     contract_balance,
     sendIncrement,
     sendDeposit,
@@ -31,9 +31,14 @@ function App() {
         <div className='Card'>
           <b>Our contract Address</b>
           <div className='Hint'>{contract_address?.slice(0, 30) + "..."}</div>
+          <b>Owner Address</b>
+          <div className='Hint'>{owner_address?.toString()}</div>
           <b>Our contract Balance </b>
           {contract_balance &&
             <div className='Hint'>{fromNano(contract_balance)}</div>}
+          <b>Recent sender </b>
+          {recent_sender &&
+            <div className='Hint'>{recent_sender.toString()}</div>}
         </div>
 
         <div className='Card'>
