@@ -5,15 +5,15 @@ import { useMainContract } from "./hooks/useMainContract";
 import { useTonConnect } from "./hooks/useTonConnect";
 import { fromNano } from 'ton-core';
 
-
+console.log(React.version)
 // 0QAkXdIpH5OIns5dH5XlWbWgCLxSAyz1LcdfMNsrGvCy_rJa
 
 function App() {
   const {
     contract_address,
     counter_value,
-    recent_sender,
-    owner_address,
+    // recent_sender,
+    // owner_address,
     contract_balance,
     sendIncrement,
     sendDeposit,
